@@ -1,0 +1,6 @@
+.card1{
+    background: linear-gradient(rgb(187, 209, 228,.9),rgb(190, 211, 214,0.9),rgb(158, 213, 238,.9));
+    box-shadow: 10px whitesmoke;
+    width:300px;
+    height:400px;
+}
