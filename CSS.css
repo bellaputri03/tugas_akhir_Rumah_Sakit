@@ -1,0 +1,134 @@
+*{margin:0px auto;}
+	body{font-family:Tahoma, verdana, sans-serif;}
+	body {background-image: url(bg.png); background-size:cover;}
+	h1 {margin:0;font-size: 22px;}
+	h2 {margin:0;font-size: 18px;}
+	p {margin-top: 0;text-align:justify; }
+	a {text-decoration:none;}
+	#wrap {width:100%;margin:auto;overflow:hidden;}
+	#header {position:fixed; background:#FFFFFF; width:100%;height:100px;}
+	#header ul{padding:6;margin:0;}
+	#header ul li { display:inline;margin-left:70px;line-height:70px;font-size:20px;padding:5px 15px;}
+	#header ul li:hover {background:white; }
+	#menu {position:fixed; margin-top: 100; width:100%;height:50px;background:Aquamarine;}
+	#menu ul{padding:0;margin:0;}
+	#menu ul li { display:inline;margin-left:100px;line-height:50px;font-size:20px;padding:5px 15px;}
+	#menu ul li:hover {background:Aquamarine; }
+	#menu ul li a {color:#FFFFFF;}
+	#content { width:100%;overflow:hidden;}
+	#a {margin-right:10px; margin-top:100px; width:540px; height:500px; float:right; background:Aquamarine;}
+	#ab {margin-left:640px; margin-top:230px; width:100%; height:100px; float:left;}
+	#ac {margin-left:550px; margin-top:30px; width:100%; height:100px; float:left;}
+	#footer {margin-top:30px;position:relative; width:100%;height:50px;background:black;text-align:center;line-height:50px;color:#FFFFFF;}
+	
+	.slider {margin-right:50px;
+	margin-top:50px;
+     width: 500px; 
+     height: 500px;
+     position: relative;
+     overflow: hidden; /* important */
+}
+
+.slider ul {
+width: 500px; 
+     height: 500px;
+	margin-left:0px;
+	margin-top:150px;
+     list-style: none;
+}
+
+/* keyframes #anim_slider */
+@-webkit-keyframes anim_slider {
+     0% {
+             opacity: 0;
+     }
+     6% {
+             opacity: 1;
+     }
+     24% {
+             opacity: 1;
+     }
+     30% {
+             opacity: 0;
+     }
+     100% {
+             opacity: 0;
+     }
+}
+
+@-moz-keyframes anim_slider {
+     0% {
+             opacity: 0;
+     }
+     6% {
+             opacity: 1;
+     }
+     24% {
+             opacity: 1;
+     }
+     30% {
+             opacity: 0;
+     }
+     100% {
+             opacity: 0;
+     }
+}
+
+/* animation */
+.slider ul li { 
+     position: absolute;
+     opacity: 0;
+     top: 0;
+
+     -webkit-animation-name: anim_slider;
+     -webkit-animation-duration: 24.0s;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: normal;
+     -webkit-animation-delay: 0;
+     -webkit-animation-play-state: running;
+     -webkit-animation-fill-mode: forwards;
+
+     -moz-animation-name: anim_slider;
+     -moz-animation-duration: 24.0s;
+     -moz-animation-timing-function: linear;
+     -moz-animation-iteration-count: infinite;
+     -moz-animation-direction: normal;
+     -moz-animation-delay: 0;
+     -moz-animation-play-state: running;
+     -moz-animation-fill-mode: forwards;
+}
+
+/* animation delays */
+.slider ul li:nth-child(2), .slider ul li:nth-child(2) div {
+     -webkit-animation-delay: 6.0s;
+     -moz-animation-delay: 6.0s;
+}
+.slider ul li:nth-child(3), .slider ul li:nth-child(3) div {
+     -webkit-animation-delay: 12.0s;
+     -moz-animation-delay: 12.0s;
+}
+.slider ul li:nth-child(4), .slider ul li:nth-child(4) div {
+     -webkit-animation-delay: 18.0s;
+     -moz-animation-delay: 18.0s;
+}
+
+/* css3 animation */
+     -webkit-animation-name: captions;
+     -webkit-animation-duration: 24.0s;
+     -webkit-animation-timing-function: linear;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: normal;
+     -webkit-animation-delay: 0;
+     -webkit-animation-play-state: running;
+     -webkit-animation-fill-mode: forwards;
+
+     -moz-animation-name: captions;
+     -moz-animation-duration: 24.0s;
+     -moz-animation-timing-function: linear;
+     -moz-animation-iteration-count: infinite;
+     -moz-animation-direction: normal;
+     -moz-animation-delay: 0;
+     -moz-animation-play-state: running;
+     -moz-animation-fill-mode: forwards;
+}
